@@ -1,4 +1,6 @@
 drill-docker
 ============
 
-Dockerfile for Apache Drill
+Dockerfile for [Apache Drill](http://incubator.apache.org/drill/)
+
+
