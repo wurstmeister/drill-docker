@@ -8,4 +8,5 @@ RUN cd /opt/incubator-drill; mvn clean install -DskipTests
 
 ENV LAST_GIT_UPDATE 2014-01-12
 RUN cd /opt/incubator-drill; git pull; mvn clean install -DskipTests
+RUN cd /opt/incubator-drill; ./sqlline -u jdbc:drill:schema=parquet-local -n admin -p admin
 CMD cd /opt/incubator-drill; ./sqlline -u jdbc:drill:schema=parquet-local -n admin -p admin
